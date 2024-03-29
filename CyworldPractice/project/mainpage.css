@@ -82,7 +82,9 @@ body {
     border: 2px solid #d4d4d4;
     border-radius: 9px;
     background-color: white;
-  
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
   }
   
   .picture{
@@ -96,31 +98,65 @@ body {
   }
 
   .todo {
-    margin-left: 50px;
+    margin-left: 75px;
     border-radius: 40px;
-    background-color: rgb(104, 35, 35);
+    /* background-color: rgb(104, 35, 35);
     width: 120px;
-    height: 120px;
+    height: 120px; */
+    justify-content: center;
+  }
+
+  .todo label {
+    font-size: 15px;
+  }
+
+  .todo .modifyButton {
+    margin-left: 18px;
+    margin-top: 15px;
+    font-size: 9px;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(37, 146, 179);
   }
 
   .music {
-    margin-top: 10px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 55px;
     border-radius: 40px;
-    background-color: rgb(204, 105, 105);
+    /* background-color: rgb(204, 105, 105);
+    width: 120px;
+    height: 30px; */
+  }
+
+  .music > audio {
     width: 120px;
     height: 30px;
   }
   
   .gogo{
 
-    margin-top: 90px;
-    margin-left: 30px;
+    margin-top: 40px;
+    margin-left: 15px;
     border-radius: 40px;
-    background-color: rgb(20, 11, 31);
+    /* background-color: rgb(20, 11, 31);
     width: 120px;
-    height: 30px;
+    height: 30px; */
+    display: flex;
+    vertical-align: center;
   }
+
+  .gogo #homepages {
+    width: 150px;
+    height: 35px;
+    background-color: #b4d1da;
+  }
+
+  #goButton {
+    background-color: rgb(37, 146, 179);
+    width: 50px;
+    height: 35px;
+  }
+
   .container2{
   
     flex:1;
