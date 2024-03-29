@@ -1,43 +1,144 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>2021 MINI HOMEPAGE</title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 MAINPAGE</title>
     <link rel="stylesheet" href="mainpage.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="bookcover">
-      <div class="bookdot">
-        <div class="page">
-          <div class="container1">
-            <div class="item1 box">TODAY <sapn style="color:red">28</sapn> | TOTAL 123456</div>
-            <div class="item2">
-                <div class="picture"></div>
-                <hr>
-                <div class="todo"></div>
-                <hr>
-                <div class="music"></div>
-                <hr>
-                <div class="gogo"></div>
-            </div>
-            
-          </div>
+        <div class="bookdot">
+            <div class="page">
+                <div class="container1">
+                    <input id="input-area" type="text" placeholder="secretkey + ENTER">
+                    <div class="item1 box">TODAY <span color:red id="today">28</span> | TOTAL 123456</div>
+                    <div class="item2">
+                        <div class="picture">
+                            <img src="https://gi.esmplus.com/yoonbusi77/CYWORLD/KakaoTalk_20240329_113941920.jpg"
+                                alt="ourpicture" width="150px" height="150px">
+                        </div>
+                        <hr>
+                        <div class="todo">
+                            <div class="listName">~Todo List~</div>
+                            <div class="todoList">
+                                <input type="checkbox" id="todo1">
+                                <label for="todo1"> 할 일 1</label><br>
 
-          <div class="container2">
-            <div class="item3">S2윤재S2(*ˊᵕˋo💐o<span class="tab">https://github.com/hellooo1321321/cyworldPractice</span></div>
-            <div class="item4">
-                <div class="ourgit"></div>
-                <br><br>
-                <div class="ourpicture"></div>
-                <br><br>
-                <div class="fisrtcomment"></div>
-            </div>
-          </div>
+                                <input type="checkbox" id="todo2">
+                                <label for="todo2"> 할 일 2</label><br>
 
-          <div class="container3">
-          </div>
+                                <input type="checkbox" id="todo3">
+                                <label for="todo3"> 할 일 3</label><br>
+
+                                <input type="checkbox" id="todo4">
+                                <label for="todo4"> 할 일 4</label><br>
+                                <input id="todotext" type="text" placeholder="수정값을 입력해주세요!">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="music"></div>
+                        <hr>
+                        <div class="gogo">
+                            <select name="gogopage">
+                                <option value="CHAN">찬우</option>
+                                <option value="DOO">도아</option>
+                                <option value="JUNG">정민</option>
+                                <option value="YOON">윤재</option>
+                            </select>
+                            <button id="goButton">이동</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <div class="item3">S2윤재S2(*ˊᵕˋoo
+                        <a
+                            href="https://github.com/hellooo1321321/cyworldPractice">https://github.com/hellooo1321321/cyworldPractice</a>
+                    </div>
+                    <div class="item4">
+                        <div class="ourgit"></div>
+                        <br><br>
+                        <div class="ourpicture"></div>
+                        <br><br>
+                        <div class="fisrtcomment"></div>
+                    </div>
+                </div>
+
+                <div class="container3">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+
+    <script>
+        const goButton = document.getElementById('goButton');
+        const gogopageSelect = document.getElementsByName('gogopage');
+        const [options] = gogopageSelect;
+        console.log(options[0].value);
+
+        console.log(gogopageSelect);
+        goButton.addEventListener('click', () => {
+            const selectedValue = gogopageSelect.value;
+            console.log(selectedValue);
+            let targetURL;  // 이동할 페이지 링크 저장
+
+            switch (selectedValue) {
+                case 'CHAN':
+                    targetURL = "https://www.naver.com/"; // 찬우 페이지 링크
+                    break;
+                case 'DOO':
+                    targetURL = "https://www.naver.com/"; // 도아 페이지 링크
+                    break;
+                case 'JUNG':
+                    targetURL = "https://www.naver.com/"; // 정민 페이지 링크
+                    break;
+                case 'YOON':
+                    targetURL = "https://www.naver.com/"; // 윤재 페이지 링크
+                    break;
+            }
+
+            if (targetURL) {
+                window.open = targetURL; // 선택된 값에 따라 페이지 이동
+            } else {
+                alert('준비중인 페이지입니다!'); // 선택하지 않았거나 없는 경우 알림 
+            }
+        });
+
+        const inputArea = document.getElementById('input-area');
+
+        // 전역 변수 선언
+        let inputValue;
+
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode === 13) {
+                inputValue = event.target.value;
+                if (inputValue === 'YJM') {
+                    window.open('https://gi.esmplus.com/yoonbusi77/CYWORLD/jjgleft.gif', '_blank');
+                } if (inputValue === '서정적인서정민') {
+                    window.open('https://dispatch.cdnser.be/wp-content/uploads/2018/06/20180607225725_f.jpg')
+                } else {
+                    alert('비밀번호 틀렸쥬~~ 개열받쥬~~~~~');
+                }
+            }
+        });
+        
+        inputArea.focus();
+
+        // const textInput = document.getElementById('todotext');
+        // const todo1 = document.getElementById('todo1');
+
+        // document.addEventListener('keydown', function (event) {
+        //     if (event.keyCode === 13) {
+        //         textInput.value = event.target.value; // 사용자 입력값을 todotext에 저장
+        //         todo1.textContent = textInput.value; // todotext의 값을 todo1의 내용으로 변경
+        //     }
+        // });
+
+        // textInput.focus();
+    </script>
+</body>
+
 </html>
