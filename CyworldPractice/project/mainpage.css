@@ -85,6 +85,42 @@ body {
   
   }
   
+  .picture{
+
+    margin: 37px;
+    border-radius: 40px;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .todo {
+    margin-left: 50px;
+    border-radius: 40px;
+    background-color: rgb(104, 35, 35);
+    width: 120px;
+    height: 120px;
+  }
+
+  .music {
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 40px;
+    background-color: rgb(204, 105, 105);
+    width: 120px;
+    height: 30px;
+  }
+  
+  .gogo{
+
+    margin-top: 90px;
+    margin-left: 30px;
+    border-radius: 40px;
+    background-color: rgb(20, 11, 31);
+    width: 120px;
+    height: 30px;
+  }
   .container2{
   
     flex:1;
@@ -95,6 +131,8 @@ body {
     margin-bottom: 15px;
   
   }
+
+
   
   .item3{
   
@@ -104,6 +142,37 @@ body {
   
   }
   
+  .ourgit{
+
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 40px;
+    background-color: rgb(204, 105, 105);
+    width: 500px;
+    height: 130px;
+  }
+
+  .ourpicture{
+
+    /* margin-top: 10px; */
+    margin-left: 50px;
+    border-radius: 40px;
+    background-color: rgb(143, 50, 196);
+    width: 500px;
+    height: 250px;
+  }
+
+  .fisrtcomment{
+
+
+    /* margin-top: 10px; */
+    margin-left: 50px;
+    border-radius: 40px;
+    background-color: rgb(204, 105, 105);
+    width: 500px;
+    height: 50px;
+
+  }
   .item4{
     
     flex:2;
