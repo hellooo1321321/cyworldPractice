@@ -1,43 +1,161 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>2021 MINI HOMEPAGE</title>
-    <link rel="stylesheet" href="mainpage.css" />
-  </head>
-  <body>
-    <div class="bookcover">
-      <div class="bookdot">
-        <div class="page">
-          <div class="container1">
-            <div class="item1 box">TODAY <sapn style="color:red">28</sapn> | TOTAL 123456</div>
-            <div class="item2">
-                <div class="picture"></div>
-                <hr>
-                <div class="todo"></div>
-                <hr>
-                <div class="music"></div>
-                <hr>
-                <div class="gogo"></div>
-            </div>
-            
-          </div>
 
-          <div class="container2">
-            <div class="item3">S2윤재S2(*ˊᵕˋo💐o<span class="tab">https://github.com/hellooo1321321/cyworldPractice</span></div>
-            <div class="item4">
-                <div class="ourgit"></div>
-                <br><br>
-                <div class="ourpicture"></div>
-                <br><br>
-                <div class="fisrtcomment"></div>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>2021 MINI HOMEPAGE</title>
+  <link rel="stylesheet" href="mainpage.css" />
+</head>
 
-          <div class="container3">
+<body>
+  <div class="bookcover">
+    <div class="bookdot">
+      <div class="page">
+        <div class="container1">
+          <div class="item1 box">TODAY <sapn style="color:red">28</sapn> | TOTAL 123456</div>
+          <div class="item2">
+            <div class="picture"></div>
+            <hr>
+            <div class="todo"></div>
+            <hr>
+            <div class="music"></div>
+            <hr>
+            <div class="gogo"></div>
           </div>
         </div>
+
+        <div class="container2">
+          <div class="item3">S2윤재S2(*ˊᵕˋo💐o<span class="tab">https://github.com/hellooo1321321/cyworldPractice</span>
+          </div>
+          <div class="item4">
+            <section class="updated-news-section">
+            <div class="ourgit">
+              <div class="box-title"><strong>Updated news</strong></div>
+              <div class="news-flex-box"></div>
+              <div class="news-box"></div>
+              <div class="news-row" onclick="goToLink('https://github.com/chamele-on')">
+                <div class="news-category category-pic">사진첩</div>
+                <div class="news-title">챤...♥</div>
+              </div>
+              <div class="news-row" onclick="goToLink('https://github.com/doa0819')">
+                <div class="news-category category-post">게시판</div>
+                <div class="news-title">돠...♥</div>
+              </div>
+              <div class="news-row" onclick="goToLink('https://github.com/wjdals83')">
+                <div class="news-category category-post">게시판</div>
+                <div class="news-title">졍...♥</div>
+              </div>
+              <div class="news-row" onclick="goToLink('https://github.com/YoonJae00')">
+                <div class="news-category category-pic">게시판</div>
+                <div class="news-title">째...★</div>
+              </div>
+            </div>
+            <script>
+              function goToLink(url) {
+                window.location.href = url;
+              }
+            </script>
+            </section>
+
+            <br><br>
+            
+            <section class="miniroom-section">
+            <div class="ourpicture">
+              <div class="box-title"> <strong>Miniroom</strong></div>
+              <img src="https://gi.esmplus.com/yoonbusi77/CYWORLD/123213213.jpg" alt="ourpicture"
+              width="500px" height="250px">
+            </div>
+          </section>
+
+          <section class="friends-section">
+            <div class="fisrtcomment"></div>
+            <div class="friends-say"> <strong>What friends say 한마디로 표현해봐~</strong></div>
+            <span>
+              <label style="color: #3b87ab;"><strong>friends say</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="일촌과 나누고 싶은 이야기를 남겨보세요~!" size="40">
+              &nbsp;&nbsp;&nbsp;
+              <button onclick="alert('등록하시겠습니까?'); console.log('클릭했네?');">확인</button>
+            </span>
+            <div class="a0">
+              <style>
+                p {
+                    
+                   line-height: 0.2; 
+                }
+            </style>
+              <p>안녕하세요? (윤재화이팅 <span style="color: #3b87ab;"><strong>김윤재</strong></span>)</p>
+              <p>아 술땡긴다 (술쟁이 <span style="color: #3b87ab;"><strong>서정민</strong></span>)</p>
+              <p>싸이월드 만들자... (어르신 <span style="color: #3b87ab;"><strong>박찬우</strong></span>)</p>
+              
+              
+              
+            </div>
+            
+
+
+
+          </section>
+
+          
+           
+          </div>
+         
+          
+        </div>
+
+      </div>
+
+      <div class="container3">
       </div>
     </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>
+
+
+
+
+
+
+
+<!-- <div class="box content-box">
+  
+    <div class="update-box">
+      <div class="menu-row">
+        <div class="menu-item">다이어리<span class="menu-num">0/25</span></div>
+        <div class="menu-item">사진첩<span class="menu-num">0/25</span></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-item">게시판<span class="menu-num">0/25</span></div>
+        <div class="menu-item">방명록<span class="menu-num">0/25</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="miniroom">
+    <div class="box-title">Miniroom</div>
+    <div class="miniroom-gif-box">
+      <img src="./static/images/myroom.png" alt="수지니의 미니룸" />
+    </div>
+  </div>
+</div>
+</div>
+<div class="menu-container"></div>
+</div>
+</div>
+</div> -->
+
+<!-- 
+<div class="news-flex-box">
+  <div class="news-box">
+    <div class="news-row">
+      <div class="news-category category-pic">사진첩</div>
+      <div class="news-title">일상...♥</div>
+    </div> -->
+
+
+<!-- <div class="miniroom">
+      <div class="box-title"> <strong>Miniroom</strong></div>
+      <img src="https://gi.esmplus.com/yoonbusi77/CYWORLD/123213213.jpg" alt="ourpicture"
+      width="500px" height="250px">
+    </div> -->
